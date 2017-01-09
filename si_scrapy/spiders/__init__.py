@@ -1,0 +1,3 @@
+
+# Error Code
+FILE_OPEN_ERROR = 101
