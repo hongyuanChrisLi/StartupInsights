@@ -9,15 +9,7 @@ def get_env_variable(var_name):
     Get environment variable or return exception
     """
     logging.config.fileConfig('logging.ini')
-
-    # logging.basicConfig(
-    #     filename='log.txt',
-    #     format='%(levelname)s: %(message)s',
-    #     level=logging.INFO
-    # )
-
     logger = logging.getLogger(__name__)
-    # logger.addHandler(logging.FileHandler())
 
     try:
         return os.environ[var_name]
