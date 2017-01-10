@@ -1,1 +1,6 @@
 # StartupInsights
+
+
+Dependencies
+
+Scrapy

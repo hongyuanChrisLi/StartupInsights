@@ -14,5 +14,5 @@ def get_env_variable(var_name):
     try:
         return os.environ[var_name]
     except KeyError as e:
-        logger.error("Environment Variable Not Found: " + var_name, e)
+        logger.exception("Environment Variable Not Found: " + str(var_name))
         sys.exit(init.ENV_VAR_NOT_FOUND)
